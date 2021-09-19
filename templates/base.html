@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block heading %}
+    <title>NewzTime - Stay Updated</title>
+    {% endblock heading %}
+    <link rel="stylesheet" href={{ url_for('static', filename='css/navbar.css') }} >
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div id="logo">NewzTime</div>
+        <ul id="navigation">
+            <li><a href="#" class="tabs">Home</a></li>
+            <li><a href="#" class="tabs">Top Headlines</a></li>
+            <li><a href="#" class="tabs">Buisness</a></li>
+            <li><a href="#" class="tabs">Entertainment</a></li>
+            <li><a href="#" class="tabs">Covid-19</a></li>
+            <li><a href="#" class="tabs">India</a></li>
+        </ul>
+    </nav>
+    {% block body %}
+        
+    {% endblock body %}
+    <script>
+        var data = {{ data | tojson | safe}}
+    </script>
+    <script src={{ url_for('static', filename='javascript/script.js') }}></script>
+    <script src="https://kit.fontawesome.com/f2bca898f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

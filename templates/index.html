@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block heading %}
+<link rel="stylesheet" href={{ url_for('static', filename='css/home.css' ) }}>
+{% endblock heading %}
+{% block body %}
+<section id="home">
+    <div class="container">
+        <h1 class="h-primary">Search</h1>
+        <form class="search-container" action="#">
+            <input type="text" id="search-box" placeholder="Search here">
+            <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <div id="news-container">
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://source.unsplash.com/user/erondu/1600x900
+            " class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">{title}</h5>
+                <p class="card-text">{description}</p>
+                <a href="#" target="_blank" class="card-button">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

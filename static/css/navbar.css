@@ -1,0 +1,98 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
+/* Styling navbar */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+#navigation {
+    display: flex;
+    list-style: none;
+}
+
+#logo {
+    padding: 6px;
+    margin: 0px 5px;
+    font-size: 1.4rem;
+}
+
+/* #navigation > li{
+    text-align: center;
+} */
+
+.tabs {
+    font-family: "Nunito", sans-serif;
+    padding: 2px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling news boxes */
+#news-container{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.news-card{
+    margin: 5px;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    min-width: 0;
+    width: 18rem;
+}
+
+.card-img-top{
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    width: 100%;
+}
+
+.card-body{
+    padding: 1rem 1rem;
+}
+
+.card-title{
+    margin-bottom: .5rem;
+    font-size: 1.25em;
+}
+
+.card-text{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1em;
+}
+
+.card-button{
+    text-decoration: none;
+    padding: .25rem .5rem;
+    font-size: .875em;
+    border-radius: .2rem;
+    color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+}
