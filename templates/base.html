@@ -26,7 +26,7 @@
         
     {% endblock body %}
     <script>
-        var data = {{ data | tojson | safe}}
+        var query = '{{ query }}'
     </script>
     <script src={{ url_for('static', filename='javascript/script.js') }}></script>
     <script src="https://kit.fontawesome.com/f2bca898f2.js" crossorigin="anonymous"></script>
