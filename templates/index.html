@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block heading %}
+<title>NewzTime - Stay Updated</title>
 <link rel="stylesheet" href={{ url_for('static', filename='css/home.css' ) }}>
 {% endblock heading %}
 {% block body %}
@@ -13,6 +14,9 @@
     </div>
     <div id="news-container">
         
+    </div>
+    <div class="load">
+        <img src="{{ url_for('static', filename='images/loading.png') }}" alt="..." id="load-icon">
     </div>
 </section>
 {% endblock body %}
